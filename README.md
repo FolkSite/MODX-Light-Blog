@@ -18,6 +18,8 @@ Light Blog Structure for MODX Revo using the new Tagger and Collections Extras
     - Field Type = Combo box
     - Show for Templates = 1, (*your single page template*)
 
+[Tagger Groups(https://dl.dropboxusercontent.com/u/4277345/MODX/Light-Blog/tagger-groups.jpg)
+
 2. Create a New Tag in "Category" our example is "**Category One**"
 
 3. Create a Collection in the root (*right click web context*) - our example is "**Blog**"
