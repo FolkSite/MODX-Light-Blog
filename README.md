@@ -59,7 +59,9 @@ $modx->setPlaceholder('tagName', urldecode($get['tags']));
 
 > Set a Property Type for the Default Heading in the chunk - our example is **ph.heading**
 
-```[[$banner?[[+tagName:notempty=`&ph.heading=`[[+tagName]]``]]]]```
+```
+[[$banner?[[+tagName:notempty=`&ph.heading=`[[+tagName]]``]]]]
+```
 
 > The chunk "banner" should holder your additional title markup and the placeholder
 
