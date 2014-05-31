@@ -49,8 +49,10 @@ We are using a Category Placeholder resource and not linking back to our blog co
 Put `[[cateHeading]]` on line 1 to set our "tagName" placeholder
 
 ```
+
 $get = modX::sanitize($_GET, $modx->sanitizePatterns);
 $modx->setPlaceholder('tagName', urldecode($get['tags']));
+
 ```
   
 ####Dynamic Heading
@@ -67,13 +69,17 @@ $modx->setPlaceholder('tagName', urldecode($get['tags']));
 
 > Repeat steps above, assuming you have a chunk for **&lt;meta&gt;**
 
-```[[$meta?[[+tagName:notempty=`&ph.title=`[[+tagName]]``]]]]```
+```
+[[$meta?[[+tagName:notempty=`&ph.title=`[[+tagName]]``]]]]
+```
 
 
 ####Content Area (Listing)
 
 > **Note:** Calling the Resource 2 (Our Collection) and sorting by publish date
 
-```[[getResources? &where=`[[TaggerGetResourcesWhere]]` &parents=`2` &tpl=`gr_posts_tpl` &sortby=`publishedon` &sortdir=`DESC`]]```
+```
+[[getResources? &where=`[[TaggerGetResourcesWhere]]` &parents=`2` &tpl=`gr_posts_tpl` &sortby=`publishedon` &sortdir=`DESC`]]
+```
 
 **gr\_posts\_tpl** = your typical getResources listing chunk
