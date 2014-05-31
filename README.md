@@ -44,6 +44,8 @@ Light Blog Structure for MODX Revo using the new Tagger and Collections Extras
 
 We are using a Category Placeholder resource and not linking back to our blog collections resource simply so we can have the URL structure of *category.html?tags=Category+One* so Google will see the index without variables. You can set the target to the collection and it will work. 
 
+![Resource Tree](https://dl.dropboxusercontent.com/u/4277345/MODX/Light-Blog/resource-tree.jpg)
+
 ```
 [[TaggerGetTags? &groups=`1` &rowTpl=`tag_categories_tpl` &target=`3`]]
 ```
