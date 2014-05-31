@@ -36,7 +36,9 @@ Light Blog Structure for MODX Revo using the new Tagger and Collections Extras
 
 We are using a Category Placeholder resource and not linking back to our blog collections resource simply so we can have the URL structure of *category.html?tags=Category+One* so Google will see the index without variables. You can set the target to the collection and it will work. 
 
-```[[TaggerGetTags? &groups=`1` &rowTpl=`tag_categories_tpl` &target=`3`]]```
+```
+[[TaggerGetTags? &groups=`1` &rowTpl=`tag_categories_tpl` &target=`3`]]
+```
  
 **tag\_categories\_tpl** = `<li><a href="[[+uri]]">[[+tag]]</a> ([[+cnt]])</li>`
 
@@ -49,10 +51,8 @@ We are using a Category Placeholder resource and not linking back to our blog co
 Put `[[cateHeading]]` on line 1 to set our "tagName" placeholder
 
 ```
-
 $get = modX::sanitize($_GET, $modx->sanitizePatterns);
 $modx->setPlaceholder('tagName', urldecode($get['tags']));
-
 ```
   
 ####Dynamic Heading
