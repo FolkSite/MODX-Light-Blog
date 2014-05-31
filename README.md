@@ -22,11 +22,17 @@ Light Blog Structure for MODX Revo using the new Tagger and Collections Extras
 
 2. Create a New Tag in "Category" our example is "**Category One**"
 
+![Tagger Tags](https://dl.dropboxusercontent.com/u/4277345/MODX/Light-Blog/tagger-tags.jpg)
+
 3. Create a Collection in the root (*right click web context*) - our example is "**Blog**"
+
+![Create Collection](https://dl.dropboxusercontent.com/u/4277345/MODX/Light-Blog/create-collection.jpg)
 
   - Set your collection to your "Category Template"
   - Add a child page - set the template to your "Single Page Template"
   - Select the Category for the child page via the Tagger Tab
+
+![Add Category](https://dl.dropboxusercontent.com/u/4277345/MODX/Light-Blog/tagger-resource-tab.jpg)
 
 --- 
 
@@ -60,6 +66,8 @@ $modx->setPlaceholder('tagName', urldecode($get['tags']));
 ####Dynamic Heading
 
 > Set a Property Type for the Default Heading in the chunk - our example is **ph.heading**
+
+![Set Property Type](https://dl.dropboxusercontent.com/u/4277345/MODX/Light-Blog/chunk-banner-properties.jpg)
 
 ```
 [[$banner?[[+tagName:notempty=`&ph.heading=`[[+tagName]]``]]]]
