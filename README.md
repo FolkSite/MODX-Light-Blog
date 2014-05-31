@@ -52,7 +52,6 @@ We are using a Category Placeholder resource and not linking back to our blog co
  
 **tag\_categories\_tpl** = `<li><a href="[[+uri]]">[[+tag]]</a> ([[+cnt]])</li>`
 
---- 
 
 ###Category Page Template
 
@@ -79,13 +78,15 @@ $modx->setPlaceholder('tagName', urldecode($get['tags']));
 
 `<h1>[[+ph.heading]]</h1>`
 
-####Dynamic Page Meta
+####Dynamic Page Meta Title
 
-> Repeat steps above, assuming you have a chunk for **&lt;meta&gt;**
+> Repeat steps from banner, assuming you have a chunk for **&lt;meta&gt;**
 
 ```
 [[$meta?[[+tagName:notempty=`&ph.title=`[[+tagName]]``]]]]
 ```
+
+Your title is now: `<title>[[+ph.title]]</title>`
 
 
 ####Content Area (Post Listing)
