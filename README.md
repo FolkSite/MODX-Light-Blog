@@ -38,7 +38,7 @@ Light Blog Structure for MODX Revo using the new Tagger and Collections Extras
 
 ##Code
 
-###Sidebar
+###Sidebar Category List
 
 > **Note:** Calling the Group 1 (Category) and Linking to resource 3 (Category Placeholder)
 
@@ -88,7 +88,7 @@ $modx->setPlaceholder('tagName', urldecode($get['tags']));
 ```
 
 
-####Content Area (Listing)
+####Content Area (Post Listing)
 
 > **Note:** Calling the Resource 2 (Our Collection) and sorting by publish date
 
