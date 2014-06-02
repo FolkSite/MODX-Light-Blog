@@ -6,8 +6,9 @@ Light Blog Structure for MODX Revo using the new Tagger and Collections Extras
 
 > Have your Category and Single Page Templates Ready
 
-
 > Install GetResources, Collections and Tagger via Package Management
+
+> Change "Content Types" .html => /
 
 ##Tagger Setup
 
@@ -61,7 +62,7 @@ Put `[[cateHeading]]` on line 1 to set our "tagName" placeholder
 
 ```
 $get = modX::sanitize($_GET, $modx->sanitizePatterns);
-$modx->setPlaceholder('tagName', rtrim(urldecode($get['tags']), ','));
+$modx->setPlaceholder('tagName', urldecode($get['tags']));
 ```
   
 ####Dynamic Heading
