@@ -61,7 +61,7 @@ Put `[[cateHeading]]` on line 1 to set our "tagName" placeholder
 
 ```
 $get = modX::sanitize($_GET, $modx->sanitizePatterns);
-$modx->setPlaceholder('tagName', urldecode($get['tags']));
+$modx->setPlaceholder('tagName', rtrim(urldecode($get['tags']), ','));
 ```
   
 ####Dynamic Heading
